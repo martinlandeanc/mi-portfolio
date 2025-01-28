@@ -1,0 +1,224 @@
+/* General Styles */
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(to bottom, #141e30, #243b55); /* Fondo armónico */
+    color: #f8f9fa;
+}
+
+/* Navbar */
+.navbar {
+    background-color: #0f2027; /* Color oscuro para armonizar con el fondo */
+    border-bottom: 2px solid #007bff;
+}
+.navbar-brand, .nav-link {
+    color: #f8f9fa !important;
+    transition: color 0.3s ease-in-out;
+}
+.nav-link:hover {
+    color: #007bff !important;
+}
+
+/* Hero Section */
+#hero {
+    background: linear-gradient(to right, #007bff, #3a3a52);
+    color: #f8f9fa;
+    text-align: center;
+    padding: 5rem 2rem;
+}
+#hero h1 {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+}
+#hero p {
+    font-size: 1.2rem;
+}
+#hero .btn-primary {
+    background-color: #fff;
+    color: #007bff;
+    border: none;
+    transition: all 0.3s ease-in-out;
+}
+#hero .btn-primary:hover {
+    background-color: #007bff;
+    color: #fff;
+}
+
+/* Sobre mí */
+#about {
+    background-color: #243b55;
+    padding: 4rem 2rem;
+}
+#about h2 {
+    text-align: center;
+    color: #007bff;
+    margin-bottom: 2rem;
+}
+#about p {
+    font-size: 1.1rem;
+    line-height: 1.6;
+}
+
+/* Courses */
+#courses {
+    background: #141e30;
+    padding: 4rem 2rem;
+}
+#courses h2 {
+    color: #007bff;
+    text-align: center;
+    margin-bottom: 2rem;
+}
+.carousel-item .card {
+    background: rgba(255, 255, 255, 0.9);
+    border: none;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.carousel-item .card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+}
+.carousel-control-prev-icon, .carousel-control-next-icon {
+    background-color: rgba(255, 255, 255, 0.8);
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    transition: background-color 0.3s ease;
+}
+.carousel-control-prev-icon:hover, .carousel-control-next-icon:hover {
+    background-color: #007bff;
+}
+
+/* Contact */
+#contact {
+    background: #243b55;
+    padding: 4rem 2rem;
+    text-align: center;
+}
+#contact h2 {
+    color: #007bff;
+    margin-bottom: 2rem;
+}
+#contact p {
+    margin: 0.5rem 0;
+}
+#contact img {
+    transition: transform 0.3s ease;
+}
+#contact img:hover {
+    transform: scale(1.1);
+}
+
+/* Footer */
+footer {
+    background-color: #0f2027;
+    padding: 1.5rem 0;
+    text-align: center;
+}
+footer p {
+    margin: 0;
+    color: #007bff;
+}
+
+/* Flechas del carrusel */
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+    background-color: #007bff; /* Azul para contrastar con el fondo */
+    border-radius: 50%; /* Forma circular */
+    width: 40px;
+    height: 40px;
+    border: 2px solid #f8f9fa; /* Borde blanco para destacarlas */
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.carousel-control-prev-icon:hover,
+.carousel-control-next-icon:hover {
+    background-color: #0056b3; /* Azul más oscuro al pasar el mouse */
+    transform: scale(1.1); /* Leve crecimiento al pasar el mouse */
+}
+
+/* Transiciones generales */
+a, button, img, .card {
+    transition: all 0.3s ease-in-out;
+}
+
+/* Botones */
+.btn-primary {
+    transition: background-color 0.3s, color 0.3s, transform 0.3s ease-in-out;
+}
+.btn-primary:hover {
+    transform: scale(1.1); /* Crecimiento ligero al pasar el mouse */
+    background-color: #0056b3;
+    color: #f8f9fa;
+}
+
+/* Imágenes */
+img {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+img:hover {
+    transform: scale(1.05); /* Crecimiento ligero */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+}
+
+/* Tarjetas */
+.card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+}
+
+/* Diseño para dispositivos pequeños (móviles) */
+@media (max-width: 768px) {
+    #hero {
+        padding: 3rem 1rem;
+    }
+    #about img {
+        width: 100%;
+        margin-top: 1rem;
+    }
+    .carousel-item .card {
+        width: 90%; /* Reduce el ancho de las tarjetas en pantallas pequeñas */
+    }
+}
+
+/* Diseño para tabletas */
+@media (min-width: 769px) and (max-width: 1024px) {
+    #hero h1 {
+        font-size: 2rem;
+    }
+    #about img {
+        width: 80%;
+    }
+    .carousel-item .card {
+        width: 75%; /* Ajuste para tablets */
+    }
+}
+/* General Styles */
+body {
+    font-family: 'Montserrat', sans-serif;
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(to bottom, #141e30, #243b55);
+    color: #f8f9fa;
+}
+
+/* Encabezados */
+h1, h2, h3, h4, h5, h6 {
+    font-weight: 700; /* Negrita para títulos */
+}
+
+/* Textos generales */
+p, a, button {
+    font-weight: 400; /* Regular para párrafos y enlaces */
+    line-height: 1.6;
+}
+
+/* Botones */
+.btn-primary {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+}
+
