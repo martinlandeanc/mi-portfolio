@@ -20,7 +20,7 @@ body {
     align-items: center;
     z-index: 9999;
     transition: opacity 1s ease;
-    overflow: hidden; /* Asegura que no se salga del contenedor */
+    overflow: hidden;
 }
 
 #video-overlay.hidden {
@@ -29,9 +29,9 @@ body {
 }
 
 #intro-video {
-    width: 100vw; /* Usa todo el ancho de la pantalla */
-    height: 100vh; /* Usa todo el alto de la pantalla */
-    object-fit: cover; /* Asegúrate de que el video cubra el espacio */
+    width: 100vw;
+    height: 100vh;
+    object-fit: cover;
 }
 
 @media (max-width: 768px) {
@@ -119,26 +119,25 @@ body {
 /* Flechas del carrusel */
 .carousel-control-prev-icon,
 .carousel-control-next-icon {
-    background-color: rgba(255, 255, 255, 0.8); /* Fondo blanco translúcido */
+    background-color: rgba(0, 0, 0, 0.8); /* Fondo oscuro translúcido */
     border-radius: 50%; /* Forma circular */
     width: 40px;
     height: 40px;
-    border: 2px solid #007bff; /* Borde azul para mayor visibilidad */
+    border: 2px solid #ffffff; /* Borde blanco para visibilidad */
     transition: background-color 0.3s ease, transform 0.3s ease;
-    z-index: 1000; /* Asegura que estén encima de otros elementos */
+    z-index: 1000;
 }
 
 .carousel-control-prev-icon:hover,
 .carousel-control-next-icon:hover {
-    background-color: #007bff; /* Azul al pasar el mouse */
-    transform: scale(1.1); /* Leve crecimiento al pasar el mouse */
+    background-color: #007bff; /* Azul brillante al pasar el mouse */
+    transform: scale(1.1);
 }
 
 .carousel-control-prev,
 .carousel-control-next {
     top: 50%; /* Centra verticalmente */
     transform: translateY(-50%);
-    z-index: 1000; /* Asegura que estén por encima de otros elementos */
 }
 
 /* Contact */
