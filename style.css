@@ -29,8 +29,15 @@ body {
 
 #intro-video {
     width: 100%;
-    height: auto;
+    max-height: 100%;
     object-fit: cover;
+}
+
+@media (max-width: 768px) {
+    #intro-video {
+        width: 100%;
+        height: auto;
+    }
 }
 
 /* Navbar */
