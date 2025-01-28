@@ -1,24 +1,18 @@
 document.addEventListener("DOMContentLoaded", () => {
-    // Selección del overlay y el video
-    const videoOverlay = document.getElementById("video-overlay");
+    const videoContainer = document.getElementById("video-container");
     const introVideo = document.getElementById("intro-video");
 
-    // Forzar reproducción del video al cargar
-    introVideo.play().catch((error) => {
-        console.error("El video no pudo reproducirse automáticamente:", error);
-    });
-
-    // Evento para ocultar el overlay al finalizar el video
+    // Ocultar video al terminar
     introVideo.addEventListener("ended", () => {
-        videoOverlay.classList.add("hidden");
+        videoContainer.classList.add("hidden");
     });
 
-    // Alternativa: Ocultar el overlay después de un tiempo fijo
+    // Fallback: Ocultar el video después de un tiempo fijo
     setTimeout(() => {
-        videoOverlay.classList.add("hidden");
-    }, introVideo.duration * 1000 || 7000); // 7 segundos por defecto si la duración no está disponible
+        videoContainer.classList.add("hidden");
+    }, 10000);
 
-    // Dynamic button functionality
+    // Botón dinámico
     const button = document.getElementById("dynamicButton");
     const steps = [
         { text: "Mis Cursos", href: "#courses" },
@@ -31,5 +25,5 @@ document.addEventListener("DOMContentLoaded", () => {
         currentStep = (currentStep + 1) % steps.length;
         button.textContent = steps[currentStep].text;
         button.href = steps[currentStep].href;
-    }, 5000); // Cambia cada 5 segundos
+    }, 5000);
 });
