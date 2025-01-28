@@ -3,26 +3,26 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfolio - Martin Landea</title>
+    <title>Portfolio - [Landea Martin]</title>
     <!-- Bootstrap CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet">
     <!-- Custom CSS -->
     <link rel="stylesheet" href="style.css">
-    <script src="script.js" defer></script>
+    <script src="script.js"></script>
 </head>
 <body>
-    <!-- Video Container -->
-    <div id="video-container">
-        <video id="intro-video" autoplay muted playsinline>
+    <!-- Video Overlay -->
+    <div id="video-overlay">
+        <video autoplay muted id="intro-video">
             <source src="assets/intro-video.mp4" type="video/mp4">
-            Tu navegador no soporta el video.
+            Tu navegador no soporta el elemento de video.
         </video>
     </div>
 
     <!-- Navbar -->
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
         <div class="container-fluid">
-            <a class="navbar-brand" href="#">Martin Landea</a>
+            <a class="navbar-brand" href="#">Landea Martin</a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
@@ -57,11 +57,81 @@
             <h2 class="text-center mb-4">Sobre mí</h2>
             <div class="row align-items-center">
                 <div class="col-md-6">
-                    <p>Soy un desarrollador en formación y Product Manager con pasión por crear soluciones tecnológicas estratégicas e innovadoras.</p>
+                    <p>Soy un desarrollador en formación y Product Manager con pasión por crear soluciones tecnológicas estratégicas e innovadoras. Me especializo en unir tecnología y gestión para llevar proyectos al siguiente nivel.</p>
                 </div>
                 <div class="col-md-6 text-center">
                     <img src="assets/TEC IMG.webp" alt="Tecnología e Innovación" class="img-fluid rounded">
                 </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Mis Cursos -->
+    <section id="courses" class="bg-light py-5">
+        <div class="container">
+            <h2 class="text-center mb-4">Mis Cursos</h2>
+            <div id="coursesCarousel" class="carousel slide" data-bs-ride="carousel">
+                <div class="carousel-inner">
+                    <!-- Curso Product Manager -->
+                    <div class="carousel-item active">
+                        <div class="card mx-auto" style="width: 18rem;">
+                            <div class="card-body">
+                                <h5 class="card-title">Product Manager</h5>
+                                <p class="card-text">Gestión estratégica de productos, planificación de proyectos y liderazgo en equipos multidisciplinarios.</p>
+                                <a href="assets/certificados/product-manager.png" target="_blank" class="btn btn-primary">Ver Certificado</a>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Curso 1 -->
+                    <div class="carousel-item">
+                        <div class="card mx-auto" style="width: 18rem;">
+                            <div class="card-body">
+                                <h5 class="card-title">Introducción al mundo IT</h5>
+                                <p class="card-text">Exploración del panorama tecnológico, conceptos clave y fundamentos del mundo IT.</p>
+                                <a href="assets/certificados/introducción-al-mundo-it.pdf" target="_blank" class="btn btn-primary">Ver Certificado</a>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Curso 2 -->
+                    <div class="carousel-item">
+                        <div class="card mx-auto" style="width: 18rem;">
+                            <div class="card-body">
+                                <h5 class="card-title">Diseño web: HTML y CSS</h5>
+                                <p class="card-text">Aprendizaje de los fundamentos de diseño web, estructuración con HTML y estilización con CSS.</p>
+                                <a href="ruta certificado aquí" target="_blank" class="btn btn-primary">Ver Certificado</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Botones de navegación -->
+                <button class="carousel-control-prev" type="button" data-bs-target="#coursesCarousel" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Anterior</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#coursesCarousel" data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Siguiente</span>
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contacto -->
+    <section id="contact" class="py-5">
+        <div class="container">
+            <h2 class="text-center mb-4">Contacto</h2>
+            <p class="text-center"><strong>Email:</strong> martinlandea.nc@gmail.com</p>
+            <p class="text-center"><strong>Teléfono:</strong> 221 575 6927</p>
+            <div class="d-flex justify-content-center">
+                <a href="https://www.instagram.com/landeamartin/" target="_blank" class="me-3">
+                    <img src="https://cdn-icons-png.flaticon.com/512/2111/2111463.png" alt="Instagram" style="width: 30px;">
+                </a>
+                <a href="https://www.linkedin.com/in/martin-landea-2638521b2/" target="_blank" class="me-3">
+                    <img src="https://cdn-icons-png.flaticon.com/512/174/174857.png" alt="LinkedIn" style="width: 30px;">
+                </a>
+                <a href="https://github.com/martinlandeanc" target="_blank">
+                    <img src="https://cdn-icons-png.flaticon.com/512/733/733609.png" alt="GitHub" style="width: 30px;">
+                </a>
             </div>
         </div>
     </section>
