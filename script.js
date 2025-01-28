@@ -1,4 +1,13 @@
 document.addEventListener("DOMContentLoaded", () => {
+    // Video overlay functionality
+    const videoOverlay = document.getElementById("video-overlay");
+    const introVideo = document.getElementById("intro-video");
+
+    introVideo.onended = () => {
+        videoOverlay.classList.add("hidden"); // Ocultar el overlay al finalizar el video
+    };
+
+    // Dynamic button functionality
     const button = document.getElementById("dynamicButton");
     const steps = [
         { text: "Mis Cursos", href: "#courses" },

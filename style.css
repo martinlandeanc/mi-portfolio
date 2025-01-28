@@ -1,15 +1,41 @@
 /* General Styles */
 body {
-    font-family: 'Arial', sans-serif;
+    font-family: 'Montserrat', sans-serif;
     margin: 0;
     padding: 0;
-    background: linear-gradient(to bottom, #141e30, #243b55); /* Fondo armónico */
+    background: linear-gradient(to bottom, #141e30, #243b55);
     color: #f8f9fa;
+}
+
+/* Video Overlay */
+#video-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 9999;
+    transition: opacity 1s ease;
+}
+
+#video-overlay.hidden {
+    opacity: 0;
+    visibility: hidden;
+}
+
+#intro-video {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
 }
 
 /* Navbar */
 .navbar {
-    background-color: #0f2027; /* Color oscuro para armonizar con el fondo */
+    background-color: #0f2027;
     border-bottom: 2px solid #007bff;
 }
 .navbar-brand, .nav-link {
@@ -81,16 +107,6 @@ body {
     transform: scale(1.05);
     box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
 }
-.carousel-control-prev-icon, .carousel-control-next-icon {
-    background-color: rgba(255, 255, 255, 0.8);
-    border-radius: 50%;
-    width: 40px;
-    height: 40px;
-    transition: background-color 0.3s ease;
-}
-.carousel-control-prev-icon:hover, .carousel-control-next-icon:hover {
-    background-color: #007bff;
-}
 
 /* Contact */
 #contact {
@@ -123,51 +139,16 @@ footer p {
     color: #007bff;
 }
 
-/* Flechas del carrusel */
-.carousel-control-prev-icon,
-.carousel-control-next-icon {
-    background-color: #007bff; /* Azul para contrastar con el fondo */
-    border-radius: 50%; /* Forma circular */
-    width: 40px;
-    height: 40px;
-    border: 2px solid #f8f9fa; /* Borde blanco para destacarlas */
-    transition: background-color 0.3s ease, transform 0.3s ease;
-}
-
-.carousel-control-prev-icon:hover,
-.carousel-control-next-icon:hover {
-    background-color: #0056b3; /* Azul más oscuro al pasar el mouse */
-    transform: scale(1.1); /* Leve crecimiento al pasar el mouse */
-}
-
 /* Transiciones generales */
 a, button, img, .card {
     transition: all 0.3s ease-in-out;
 }
 
 /* Botones */
-.btn-primary {
-    transition: background-color 0.3s, color 0.3s, transform 0.3s ease-in-out;
-}
 .btn-primary:hover {
-    transform: scale(1.1); /* Crecimiento ligero al pasar el mouse */
+    transform: scale(1.1);
     background-color: #0056b3;
     color: #f8f9fa;
-}
-
-/* Imágenes */
-img {
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
-}
-img:hover {
-    transform: scale(1.05); /* Crecimiento ligero */
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
-}
-
-/* Tarjetas */
-.card:hover {
-    transform: scale(1.05);
-    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
 }
 
 /* Diseño para dispositivos pequeños (móviles) */
@@ -179,46 +160,4 @@ img:hover {
         width: 100%;
         margin-top: 1rem;
     }
-    .carousel-item .card {
-        width: 90%; /* Reduce el ancho de las tarjetas en pantallas pequeñas */
-    }
 }
-
-/* Diseño para tabletas */
-@media (min-width: 769px) and (max-width: 1024px) {
-    #hero h1 {
-        font-size: 2rem;
-    }
-    #about img {
-        width: 80%;
-    }
-    .carousel-item .card {
-        width: 75%; /* Ajuste para tablets */
-    }
-}
-/* General Styles */
-body {
-    font-family: 'Montserrat', sans-serif;
-    margin: 0;
-    padding: 0;
-    background: linear-gradient(to bottom, #141e30, #243b55);
-    color: #f8f9fa;
-}
-
-/* Encabezados */
-h1, h2, h3, h4, h5, h6 {
-    font-weight: 700; /* Negrita para títulos */
-}
-
-/* Textos generales */
-p, a, button {
-    font-weight: 400; /* Regular para párrafos y enlaces */
-    line-height: 1.6;
-}
-
-/* Botones */
-.btn-primary {
-    font-family: 'Montserrat', sans-serif;
-    font-weight: 700;
-}
-
